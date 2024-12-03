@@ -1,13 +1,21 @@
-print('1st program')
-print(int(9**.5*5))
-print(' ')
-print('2nd program')
-print(9.99>9.98 and 1000 != 1000.1)
-print(' ')
-print('3nd program')
-print('2*2+2')
-print('2*(2+2)')
-print(2*2+2==2*(2+2))
-print(' ')
-print('4nd program')
-print(int(float('123.456')*10)%10)
+class Human:
+    head = True
+
+    def sey_hello(self):
+        print('Здравствуйте')
+
+class Student(Human):
+    head = False
+    def about(self):
+        print('Я студент')
+
+
+class Teacher(Human):
+    pass
+
+#human = Human()
+student = Student()
+teacher = Teacher()
+student.sey_hello()
+teacher.sey_hello()
+print(student.head)
